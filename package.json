@@ -1,11 +1,13 @@
 {
   "name": "node-js-upload-download-excel-files",
   "version": "1.0.0",
+  "homepage": "https://gitname.github.io/react-gh-pages",
   "description": "Node.js Upload/Import Excel files to MySQL Database and download Excel File",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "node js",
@@ -23,6 +25,7 @@
     "cors": "^2.8.5",
     "exceljs": "^4.0.1",
     "express": "^4.17.1",
+    "gh-pages": "^4.0.0",
     "multer": "^1.4.2",
     "mysql2": "^2.1.0",
     "percentile": "^1.4.0",

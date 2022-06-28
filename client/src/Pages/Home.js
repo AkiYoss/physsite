@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import CarouselBox from '../Components/CarouselBox'
 import { Card, CardDeck, Container, Button } from 'react-bootstrap'
-import logo from "../assets/a.png"
 
 export default class Home extends Component {
     render() {
@@ -15,7 +14,7 @@ export default class Home extends Component {
                     <Card>
                         <Card.Img 
                             variant="top"
-                            src={logo}
+                            src='https://images.pexels.com/photos/1546912/pexels-photo-1546912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
                         />
                         <Card.Body>
                             <Card.Title> НАГРАДЫ </Card.Title>
