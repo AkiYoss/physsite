@@ -6,8 +6,8 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "cd client && npm install && npm run build",
+    "deploy": "cd client && npm install && gh-pages -d build"
   },
   "keywords": [
     "node js",
